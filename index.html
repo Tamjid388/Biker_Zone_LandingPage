@@ -18,9 +18,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
   </head>
-  <body class="">
+  <body class="manrope">
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+.manrope{
+  font-family: "Manrope", sans-serif;
+  
+}
       .b {
         border: solid salmon 2px;
       }
@@ -63,14 +76,14 @@
           <li><a class="text-[#737373] text-2xl font-medium">Pages</a></li>
           <li><a class="text-[#737373] text-2xl font-medium">Blog</a></li>
 
-          <li><a class="text-[#737373] text-2xl  font-medium">Contact Us</a></li>
+          <li><a class="text-[#737373] text-2xl font-manrope  font-medium">Contact Us</a></li>
         </ul>
 
 
 
         <div class="md:flex hidden space-x-8">
           <div class=" my-auto space-x-4 flex">
-            <!-- <i class="fa-solid fa-magnifying-glass b  w-12 h-12 text-2xl bg-[#FFFFFF]"></i> -->
+         
              <img src="Frame 2.png" alt="">
              <img src="assets/Frame 3.png" alt="">
           </div>
@@ -107,12 +120,12 @@
           />
         </div>
         <h1
-          class="text-center text-3xl font-bold my-5 lg:text-6xl lg:w-4/6 lg:mx-auto lg:my-7"
+          class="text-center text-3xl  font-extrabold my-5 lg:text-6xl lg:w-4/6 lg:mx-auto lg:my-7"
         >
           A barn house of this design has a striking appearance
         </h1>
         <h3
-          class="text-center text-base font-medium mb-5 lg:w-4/6 lg:mx-auto lg:my-7 lg:text-xl"
+          class="text-center text-base font-medium mb-5 lg:w-4/6 lg:mx-auto lg:my-7 lg:text-xl opacity-80"
         >
           The barn house captivates with its blend of rustic charm and modern
           sophistication, featuring weathered wood, sleek metal accents, and
@@ -120,48 +133,53 @@
         </h3>
         <div class="flex">
           <button
-            class="bg-green-300 w-full lg:w-auto lg:px-5 font-bold mx-auto rounded-3xl py-2"
+            class="bg-[#ABEF5F80] w-full lg:w-auto lg:px-6 font-extrabold mx-auto rounded-full py-4 "
           >
             View Details
             <i
-              class="fa-solid fa-arrow-right -rotate-45 bg-green-500 rounded-full p-1 ml-1"
+              class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-1 ml-1"
             ></i>
           </button>
         </div>
       </div>
     </header>
 
-    <section class="lg:my-28 w-full bg-gray-200 pt-4">
+    <section class="lg:my-28 w-full bg-gray-200 pt-4 py-20 px-2">
       <!-- About Us Section -->
       <div
-        class="lg:grid lg:grid-cols-2 lg:items-center container lg:mx-auto lg:gap-10"
+        class="lg:grid lg:grid-cols-2 lg:items-center container lg:mx-auto lg:gap-10  lg:pt-20"
       >
         <!-- Left Column:Content -->
-        <div class="flex flex-col text-center lg:text-left gap-12 lg:h-full">
+        <div class="flex flex-col text-center lg:text-left gap-12 lg:h-full ">
+          <div class="relative -left-20 hidden lg:block">
+            <img src="assets/Vector.png" alt="">
+          </div>
+          
           <div>
-            <button class="bg-white px-3">
-              <i class="fa-solid fa-arrow-right"></i> About US
+            <button class="bg-white px-3 rounded-xl">
+              <i class="fa-solid fa-arrow-right"></i> <span class="font-semibold opacity-80"
+              >About US</span>
             </button>
           </div>
           <div class="">
-            <h1 class="font-bold lg:text-5xl text-center">
+            <h1 class="font-extrabold text-5xl text-center lg:text-start ">
               We design thoughtful, <br />
               liveable spaces
             </h1>
-            <h1 class="lg:mt-8 w-4/5">
+            <h1 class="mt-8 opacity-80  text-center mx-auto lg:text-start font-semibold text-[#494949]">
               The barn house captivates with its blend of rustic charm and
               modern sophistication, featuring weathered wood, sleek metal
               accents.
             </h1>
           </div>
           <!-- card1 -->
-          <div class="flex bg-white rounded-lg items-start p-5 gap-4 mx-2">
+          <div class="flex bg-white rounded-lg items-center p-5 gap-4 ">
             <div>
               <img src="assets/commercial.png" alt="" />
             </div>
-            <div class="flex flex-col lg:text-start text-center">
-              <h1 class="font-semibold">Commercial</h1>
-              <h2 class="mt-2">
+            <div class="flex flex-col text-start lg:py-8">
+              <h1 class="font-extrabold text-2xl">Commercial</h1>
+              <h2 class="mt-2 opacity-80 text-xl">
                 The barn house captivates with its blend of rustic charm and
                 modern.
               </h2>
@@ -169,14 +187,14 @@
           </div>
 
           <div
-            class="flex bg-white rounded-lg items-start p-5 lg:p-8 gap-4 mx-2"
+            class="flex bg-white rounded-lg items-center p-5 lg:p-8 gap-4 mb-14"
           >
             <div>
               <img src="assets/residential.png" alt="" />
             </div>
-            <div class="flex flex-col text-start">
-              <h1 class="font-semibold">Commercial</h1>
-              <h2 class="mt-2">
+            <div class="flex flex-col text-start lg:py-8">
+              <h1 class="font-extrabold text-2xl">Residential</h1>
+              <h2 class="mt-2 opacity-80 text-xl">
                 The barn house captivates with its blend of rustic charm and
                 modern.
               </h2>
@@ -192,7 +210,7 @@
     </section>
 
     <!-- ...............Portfolio Section.................... -->
-    <section class="container lg:mx-auto mb-20">
+    <section class="container lg:mx-auto mb-20 px-2">
      <!-- title -->
      <div class="">
       <div class="text-center">
@@ -203,7 +221,7 @@
         </div>
 
         <h1 class="text-5xl font-bold pt-5 pb-8">Our Latest Portfolio</h1>
-        <h2 class="text-xl">
+        <h2 class="text-xl font-semibold text-[#494949]">
           The barn house captivates with its blend of rustic charm and modern
           sophistication <br />
           featuring weathered wood, sleek metal accents.
@@ -213,17 +231,17 @@
 
       <!-- Cards -->
       <div
-        class="container mt-20 mx-auto grid grid-cols-1 lg:grid-cols-12 lg:grid-rows-2 px-2 gap-2"
+        class="container mt-20 mx-auto grid grid-cols-1 lg:grid-cols-12 lg:grid-rows-2 px-2 gap-2 lg:space-y-4"
       >
         <!-- 1 -->
         <div
-          class="lg:flex lg:col-span-8 lg:row-span-1 p-1 border rounded-2xl justify-center items-center"
+          class="shadow-md lg:flex lg:col-span-8 lg:row-span-1 p-1 border rounded-2xl justify-center items-center"
         >
           <div class="h-52 lg:w-[390px]">
             <img src="assets/img1.png" class="w-full h-full" alt="" />
           </div>
 
-          <div class="space-y-4 lg:ml-4">
+          <div class="space-y-4 lg:ml-4 lg:mt-0 mt-4">
             <h2 class="font-extrabold text-2xl">Commercial</h2>
             <p class="text-[#737373] font-medium">
               The barn house captivates with its blend of rustic charm ,<br />and
@@ -241,26 +259,26 @@
         </div>
         <!-- 2 -->
         <div
-          class="h-52 lg:col-span-4 lg:row-span-1 border rounded-2xl p-2 py-2"
+          class="shadow-md h-52 lg:col-span-4 lg:row-span-1 border rounded-2xl p-2 py-2"
         >
           <img src="assets/img2.png" class="w-full h-full" />
         </div>
 
         <!-- 3 -->
 
-        <div class="h-52 lg:col-span-3 border rounded-2xl p-2">
+        <div class="shadow-md h-52 lg:col-span-3 border rounded-2xl p-2">
           <img src="assets/img3.png" class="w-full h-full" />
         </div>
 
         <!-- 4 -->
         <div
-          class="lg:flex lg:col-span-6 border rounded-2xl p-2 justify-center items-center"
+          class="shadow-md lg:flex lg:col-span-6 border rounded-2xl p-2 justify-center items-center"
         >
           <div class="h-52">
             <img src="assets/img4.png" class="w-full h-full" alt="" />
           </div>
 
-          <div class="space-y-4 lg:ml-4">
+          <div class="space-y-4 lg:ml-4 lg:mt-0 mt-4">
             <h2 class="font-extrabold text-2xl">Commercial</h2>
             <p class="w-3/4 text-[#737373] font-medium">
               The barn house captivates with its blend of rustic charm ,<br />and
@@ -279,14 +297,14 @@
 
         <!-- 5 -->
 
-        <div class="h-52 lg:col-span-3 border rounded-2xl p-2">
+        <div class="shadow-md h-52 lg:col-span-3 border rounded-2xl p-2">
           <img src="assets/img5.png" class="w-full h-full" />
         </div>
       </div>
     </section>
 
     <!-- CHallenge Section -->
-    <section class="">
+    <section class="px-2">
       <!-- title -->
       <div class="px-2">
         <div class="text-center">
@@ -426,7 +444,7 @@
 
     <!-- ............................................ -->
     <!-- Work Process Section -->
-    <section class="bg-gray-200 py-28">
+    <section class="bg-gray-200 py-28 px-2">
       <!-- title -->
       <div class="">
         <div class="text-center">
@@ -437,7 +455,7 @@
           </div>
 
           <h1 class="text-5xl font-bold pt-5 pb-8">Our Works Process</h1>
-          <h2 class="text-xl">
+          <h2 class="text-xl font-semibold text-[#494949]">
             The barn house captivates with its blend of rustic charm and modern
             sophistication <br />
             featuring weathered wood, sleek metal accents.
@@ -485,7 +503,7 @@
     </section>
 
     <!-- Lets Discuss Section -->
-    <section class="bg-gray-300 py-28" id="form-bg">
+    <section class="bg-gray-300 py-28" id="form-bg px-2">
       <div class="container mx-auto">
         <!-- title -->
         <div class="">
@@ -496,11 +514,9 @@
               <i class="fa-solid fa-arrow-right mr-1 py-2"> </i>Let’s Connect
             </div>
 
-            <h1 class="text-5xl font-bold pt-5 pb-8">Our Works Process</h1>
-            <h2 class="text-xl mb-10">
-              The barn house captivates with its blend of rustic charm and
-              modern sophistication <br />
-              featuring weathered wood, sleek metal accents.
+            <h1 class="text-5xl font-bold pt-5 pb-8">Let’s Discuss Next Project</h1>
+            <h2 class="text-xl mb-10 font-semibold text-[#494949]">
+              Join Us in Shaping the Future of Innovation and Creativity
             </h2>
           </div>
         </div>
@@ -551,7 +567,7 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="py-28 bg-black">
+    <footer class="py-28 bg-black px-2">
       <div class="container mx-auto">
         <div class="flex">
           <button
